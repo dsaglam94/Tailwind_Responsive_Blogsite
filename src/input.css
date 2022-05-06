@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#header {
+    background-image: url('../images/bg-pattern-intro-mobile.svg'), linear-gradient(to left top,  hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    background-repeat: no-repeat;
+    background-position: 35% 50%;
+}
+
+#design {
+    background-image: url('../images/illustration-editor-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: 50% 30%;
+}
+
+/* Dropdown Menu Custom Style */
+.dropdown-menu {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+.dropdown.active > .dropdown-menu{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown.active i {
+    transform: rotate(180deg);
+}
+
+/* Hamburger Menu Custom */
+
+.hamburger-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: opacity .25s, transform .25s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+    opacity: 1;
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.hamburger-menu.active .hamburger-top {
+    transform: translateY(7px) rotate(-45deg);
+    transition-delay: .125s;
+}
+
+.hamburger-menu.active .hamburger-middle {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-bottom {
+    transform: translateY(7px) rotate(45deg);
+    transition-delay: .125s;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+    width: calc(100% - 3rem);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .125s ease-in-out;
+}
+
+.mobile-nav.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#sign-up-btn--mobile {
+    background: linear-gradient(to left top,  hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+}
+
+@media (min-width: 1200px) {
+    #header {
+        background-image: url('../images/bg-pattern-intro-desktop.svg'), linear-gradient(to left top,  hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+        background-position: 35% 50%;
+    }
+    #design {
+        background-image: url('../images/illustration-editor-desktop.svg');
+        background-size: 800px;
+        background-position: 140% 150%;
+    }
+  
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Fontawesome CDN -->
+  <script src="https://kit.fontawesome.com/be05affc2e.js" crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <!-- Custom JS  -->
+  <script src="./src/js/main.js" defer></script>
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+<body>
+
+<!-- Intro Section -->
+<header id="header" class="relative flex flex-col h-[70vh] py-14 px-6 rounded-bl-[10rem] lg:px-32">
+<!-- Navbar -->
+<nav class="container flex items-center justify-between mx-auto">
+  <!-- Logo -->
+  <div class="">
+    <img class="h-10 md:h-8" src="./images/logo.svg" alt="">
+  </div>
+  <!-- Desktop Nav List -->
+  <div class="hidden relative items-center space-x-6 mr-auto ml-10 md:flex">
+    <!-- Dropdown Section -->
+    <div class="dropdown relative" data-dropdown>
+      <button class="text-veryLightRedNav hover:text-white hover:underline focus:outline-none" data-dropdown-button>Product <i class="fas fa-chevron-down ml-1"></i></button>
+      <div class="dropdown-menu flex flex-col space-y-2 absolute top-[40px] bg-white rounded-md py-5 pl-5 pr-16">
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Overview</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Pricing</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Marketplace</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Features</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Integrations</a>
+      </div>
+    </div>
+
+    <div class="dropdown relative" data-dropdown>
+      <button class="text-veryLightRedNav hover:text-white hover:underline focus:outline-none" data-dropdown-button>Company <i class="fas fa-chevron-down ml-1"></i></button>
+      <div class="dropdown-menu flex flex-col space-y-2 absolute top-[40px] bg-white rounded-md py-5 pl-5 pr-16">
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">About</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Team</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Blog</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Careers</a>
+      </div>
+    </div>
+
+    <div class="dropdown relative" data-dropdown>
+      <button class="text-veryLightRedNav hover:text-white hover:underline focus:outline-none" data-dropdown-button>Connect <i class="fas fa-chevron-down ml-1"></i></button>
+      <div class="dropdown-menu flex flex-col space-y-2 absolute top-[40px] bg-white rounded-md py-5 pl-5 pr-16">
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Contact</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Newsletter</a>
+        <a class="text-veryDarkGrayishBlue hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">LinkedIn</a>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Desktop Nav Buttons -->
+  <div class="hidden items-center text-veryLightRedNav text-sm md:flex">
+    <button class="bg-transparent pt-2 pb-3 px-10 -mr-8 rounded-full focus:outline-none hover:bg-veryLightRed hover:text-white">Login</button>
+    <button class="bg-transparent pt-2 pb-3 px-10 rounded-full focus:outline-none hover:bg-veryLightRed hover:text-white">Sign up</button>
+  </div>
+
+  <!-- Hamburger Icon -->
+    <div class="hamburger-menu flex md:hidden">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </div>
+
+    <!-- Mobile Nav List -->
+<div class="mobile-nav flex flex-col items-center text-center bg-white px-6 py-10 space-y-8 absolute top-[400px] left-2/4 -translate-y-2/4 -translate-x-2/4 rounded-md md:hidden">
+
+      <div class="dropdown active w-full" data-dropdown>
+        <button class="text-veryDarkBlue font-bold focus:text-veryDarkBlue-600 focus:outline-none" data-dropdown-button>Product <i class="fas fa-chevron-down ml-1 text-introGradientVeryLightRed"></i></button>
+
+          <div class="dropdown-menu hidden flex-col text-center space-y-2 bg-grayishBlue rounded-md py-5 px-6">
+              <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Overview</a>
+              <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Pricing</a>
+              <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Marketplace</a>
+              <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Features</a>
+              <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Integrations</a>
+          </div>
+    </div>
+
+    <div class="dropdown active w-full" data-dropdown>
+      <button class="text-veryDarkBlue font-bold focus:text-veryDarkBlue-600 focus:outline-none" data-dropdown-button>Company <i class="fas fa-chevron-down ml-1 text-introGradientVeryLightRed"></i></button>
+
+        <div class="dropdown-menu hidden flex-col text-center space-y-2 bg-grayishBlue rounded-md py-5 px-6">
+            <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">About</a>
+            <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Team</a>
+            <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Blog</a>
+            <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Careers</a>
+        </div>
+  </div>
+
+  <div class="dropdown active w-full" data-dropdown>
+    <button class="text-veryDarkBlue font-bold focus:text-veryDarkBlue-600 focus:outline-none" data-dropdown-button>Connect <i class="fas fa-chevron-down ml-1 text-introGradientVeryLightRed"></i></button>
+
+      <div class="dropdown-menu hidden flex-col text-center space-y-2 bg-grayishBlue rounded-md py-5 px-6">
+          <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Contact</a>
+          <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">Newsletter</a>
+          <a class="text-veryDarkBlue-600 hover:font-bold hover:text-bodyGradientVeryDarkDesaturatedBlue" href="#">LinkedIn</a>
+      </div>
+  </div>
+  <!-- Login Buttons -->
+  <div class="flex flex-col border-t-2 border-grayishBlue w-full space-y-6 py-6">
+    <button class="text-lg font-bold text-veryDarkBlue focus:outline-none">Login</button>
+    <div>
+      <button id="sign-up-btn--mobile" class="text-lg font-bold text-white pt-2 pb-3 px-8 rounded-3xl">Sign Up</button>
+    </div>
+  </div>
+</div>
+</nav>
+<!-- Intro Text -->
+<div class="container flex flex-col items-center text-center mx-auto mt-auto mb-auto space-y-10">
+  <!-- Intro Heading -->
+  <h1 class="text-5xl text-white md:text-7xl">
+    A modern publishing platform
+  </h1>
+  <!-- Intro Paragraph -->
+  <p class="text-2xl text-veryLightRedNav">
+    Grow your audience and build your online brand
+  </p>
+  <!-- Intro CTA Buttons -->
+  <div class="space-x-6">
+    <button class="bg-white text-introGradientLightRed font-bold px-6 pt-3 pb-4 rounded-full hover:bg-veryLightRed hover:text-veryLightRedNav focus:outline-none">Start For Free</button>
+    <button class="bg-transparent text-white border font-bold px-6 pt-3 pb-4 rounded-full hover:bg-white hover:text-introGradientLightRed focus:outline-none">Learn More</button>
+  </div>
+</div>
+</header>
+
+<!-- Design Section -->
+<section id="design" class="py-14 px-6 md:py-32 lg:px-32">
+  <!-- Heading -->
+  <h1 class="text-4xl text-center mb-12 font-bold text-veryDarkBlue mt-20 md:mb-20">Designed for the future</h1>
+  <!-- Container -->
+  <div class="container text-center mx-auto">
+    <!-- Text Container -->
+    <div class="space-y-6 lg:flex lg:flex-col lg:text-left lg:space-y-16">
+      <!-- First Text Area -->
+      <div class="space-y-6 mt-[32rem] lg:max-w-lg lg:mt-0">
+        <h2 class="text-4xl text-veryDarkBlue w-3/4 mx-auto md:w-full md:text-xl">Introducing an extensible editor</h2>
+        <p class="text-black opacity-70">
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog.
+        </p>
+      </div>
+      <!-- Second Text Area -->
+      <div class="space-y-6 lg:max-w-lg">
+        <h2 class="text-4xl text-veryDarkBlue w-3/4 mx-auto md:w-full md:text-xl">Robust content management</h2>
+        <p class="text-black opacity-70">
+          Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+  <!-- Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
