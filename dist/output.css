@@ -516,6 +516,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 50%;
 }
 
+.-top-60 {
+  top: -15rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -557,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 32rem;
 }
 
+.mt-64 {
+  margin-top: 16rem;
+}
+
 .flex {
   display: flex;
 }
@@ -579,6 +587,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3\/4 {
   width: 75%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.max-w-sm {
+  max-width: 24rem;
 }
 
 .-translate-y-2\/4 {
@@ -647,6 +663,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-bl-\[10rem\] {
   border-bottom-left-radius: 10rem;
+}
+
+.rounded-tr-\[10rem\] {
+  border-top-right-radius: 10rem;
 }
 
 .border {
@@ -735,6 +755,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.pt-72 {
+  padding-top: 18rem;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -766,6 +794,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-veryLightRedNav {
@@ -823,6 +855,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: 50% 30%;
+}
+
+#sub-details {
+  background-image: url('../images/bg-pattern-circles.svg');
+  background-color: hsl(208, 49%, 24%);
+  background-repeat: no-repeat;
+  background-position: top -120% right 50%;
+  background-size: 550px;
 }
 
 /* Dropdown Menu Custom Style */
@@ -1013,6 +1053,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .lg\:max-w-md {
+    max-width: 28rem;
   }
 
   .lg\:flex-col {
