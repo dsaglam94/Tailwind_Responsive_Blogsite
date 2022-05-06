@@ -19,8 +19,8 @@
     background-image: url('../images/bg-pattern-circles.svg');
     background-color: hsl(208, 49%, 24%);
     background-repeat: no-repeat;
-    background-position: top -120% right 50%;
-    background-size: 550px;
+    background-position: top -500% right 50%;
+    background-size: 650px;
 }
 
 /* Dropdown Menu Custom Style */
@@ -107,7 +107,12 @@
     #design {
         background-image: url('../images/illustration-editor-desktop.svg');
         background-size: 800px;
-        background-position: 140% 150%;
+        background-position: 140% 85%;
+    }
+
+    #sub-details {
+        background-size: 850px;
+        background-position: top 90% left -35%;
     }
   
 }
