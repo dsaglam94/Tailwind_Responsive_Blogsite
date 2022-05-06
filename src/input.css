@@ -15,6 +15,14 @@
     background-position: 50% 30%;
 }
 
+#sub-details {
+    background-image: url('../images/bg-pattern-circles.svg');
+    background-color: hsl(208, 49%, 24%);
+    background-repeat: no-repeat;
+    background-position: top -120% right 50%;
+    background-size: 550px;
+}
+
 /* Dropdown Menu Custom Style */
 .dropdown-menu {
     opacity: 0;
